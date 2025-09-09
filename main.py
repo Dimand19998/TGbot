@@ -11,12 +11,12 @@ import os
 
 from telebot.async_telebot import AsyncTeleBot
 
-bot = AsyncTeleBot (os.environ["tgtok"])
+bot = AsyncTeleBot (os.environ["testbot"])
 
 # Handle '/start' and '/help'
 @bot.message_handler(commands=['help', 'start'])
 async def send_welcome(message):
-    text = 'Hi, I am EchoBot.\nJust write me something and I will repeat it!'
+    text = 'Hi, I am EchoBot. Just write me something and I will repeat it! \nПривет, я ЭхоБот. Просто напишите мне что-нибудь, и я это повторю!'
     await bot.reply_to(message, text)
 
 
