@@ -8,7 +8,7 @@ from aiogram.filters import Command
 from aiogram import Router
 
 # === Настройки ===
-API_TOKEN = os.getenv("testbot") or "ВСТАВЬ_СЮДА_ТОКЕН_БОТА" # testbot telegram bot token
+API_TOKEN = os.getenv("testbot")  # testbot telegram bot token
 ADMIN_ID = 167372100  # user_id
 
 logging.basicConfig(level=logging.INFO)
